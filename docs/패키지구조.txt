@@ -1,6 +1,17 @@
 
 === src/main/java
 
+
+com.cafe24.springcontainer.user
+com.cafe24.springcontainer.soundsystem
+com.cafe24.springcontainer.videosystem
+   |- DigitalVideoDisc
+   |- Avengers
+   |- DVDPalyer
+   |- BlankDisc
+   |- DVDPack	
+
+
 config.user
    |--------  UserConfig.java
 config.soundsystem
@@ -23,8 +34,17 @@ config.videosystem
 
 === src/test/java
    |---- com.cafe24.springcontainer.soundsystem
-           |--CDPlayerJavaConfigTest.Java
-           |--CDPlayerXmlConfigTest.Java
+   |       |-- CDPlayerJavaConfigTest.Java
+   |       |-- CDPlayerXmlConfigTest.Java
+   |       
+   |---- com.cafe24.springcontainer.videosystem
+           |-- DVDPlayerJavaConfigTest.java
+           |-- DVDPlayerXmlConfigTest.java
+           |-- DVDPlayerMixingConfigTest01.java
+           |-- DVDPlayerMixingConfigTest02.java
+           |-- DVDPlayerMixingConfigTest03.java
+
+
 
 
     
