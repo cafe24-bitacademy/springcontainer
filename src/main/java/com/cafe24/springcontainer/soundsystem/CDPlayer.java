@@ -1,6 +1,7 @@
 package com.cafe24.springcontainer.soundsystem;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -26,7 +27,7 @@ public class CDPlayer {
 
 	// 와이어링04
 	@Autowired
-	public void insertComapctDisc(CompactDisc cd) {
+	public void insertComapctDisc(@Qualifier("highSchoolRapper3Final") CompactDisc cd) {
 		this.cd = cd;
 	}
 	

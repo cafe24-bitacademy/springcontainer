@@ -3,11 +3,13 @@ package com.cafe24.springcontainer.soundsystem;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -27,6 +29,7 @@ public class CDPlayerJavaConfigTest {
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 	
 	@Autowired
+	@Qualifier("highSchoolRapper2Final")
 	private CompactDisc cd;
 
 	@Autowired
@@ -35,6 +38,7 @@ public class CDPlayerJavaConfigTest {
 	@Test
 	public void testCDNull() {
 		assertNotNull(cd);
+		System.out.println( cd );
 	}
 	
 	@Test
